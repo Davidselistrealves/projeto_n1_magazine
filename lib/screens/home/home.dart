@@ -54,37 +54,45 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                _goods.name,
-                style: TextStyle(
-                  fontSize: 8,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  _goods.name,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
                 ),
-              ),
-              Text(
-                _goods.description,
-                style: TextStyle(
-                  fontSize: 8,
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              Text(
-                _goods.value,
-                style: TextStyle(
-                  fontSize: 8,
-                  fontWeight: FontWeight.bold,
-                  color: blueTheme,
+                Text(
+                  _goods.description,
+                  style: TextStyle(
+                    fontSize: 10,
+                  ),
                 ),
-              ),
-              Text(
-                _goods.parcel,
-                style: TextStyle(
-                  fontSize: 8,
-                  color: blueTheme,
+                SizedBox(
+                  height: 10,
                 ),
-              )
-            ],
+                Text(
+                  _goods.value,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: blueTheme,
+                  ),
+                ),
+                Text(
+                  _goods.parcel,
+                  style: TextStyle(
+                    fontSize: 8,
+                    color: blueTheme,
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
